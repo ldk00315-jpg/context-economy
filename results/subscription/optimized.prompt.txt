@@ -1,0 +1,35 @@
+Answer these six independent data questions. Use ONLY the supplied data. Do not call any tools or read files. Encodings include their decoding instructions. Return ONE JSON object keyed by question id, with no prose or markdown.
+
+QUESTION table: Return the complete object with id 43.
+DATA:
+TABLE-V1 (all rows, in order; zip columns with each row to recover JSON objects):
+{"columns":["id","status","region","value"],"rows":[[0,"active","west",0],[1,"active","west",17],[2,"active","west",34],[3,"active","west",51],[4,"active","west",68],[5,"active","west",85],[6,"active","west",102],[7,"active","west",119],[8,"active","west",136],[9,"active","west",153],[10,"active","west",170],[11,"active","west",187],[12,"active","west",204],[13,"active","west",221],[14,"active","west",238],[15,"active","west",255],[16,"active","west",272],[17,"active","west",289],[18,"active","west",306],[19,"active","west",323],[20,"active","west",340],[21,"active","west",357],[22,"active","west",374],[23,"active","west",391],[24,"active","west",408],[25,"active","west",425],[26,"active","west",442],[27,"active","west",459],[28,"active","west",476],[29,"active","west",493],[30,"active","west",510],[31,"active","west",527],[32,"active","west",544],[33,"active","west",561],[34,"active","west",578],[35,"active","west",595],[36,"active","west",612],[37,"active","west",629],[38,"active","west",646],[39,"active","west",663],[40,"active","west",680],[41,"active","west",697],[42,"active","west",714],[43,"paused","east",-731],[44,"active","west",748],[45,"active","west",765],[46,"active","west",782],[47,"active","west",799],[48,"active","west",816],[49,"active","west",833],[50,"active","west",850],[51,"active","west",867],[52,"active","west",884],[53,"active","west",901],[54,"active","west",918],[55,"active","west",935],[56,"active","west",952],[57,"active","west",969],[58,"active","west",986],[59,"active","west",1003],[60,"active","west",1020],[61,"active","west",1037],[62,"active","west",1054],[63,"active","west",1071],[64,"active","west",1088],[65,"active","west",1105],[66,"active","west",1122],[67,"active","west",1139],[68,"active","west",1156],[69,"active","west",1173],[70,"active","west",1190],[71,"active","west",1207],[72,"active","west",1224],[73,"active","west",1241],[74,"active","west",1258],[75,"active","west",1275],[76,"active","west",1292],[77,"active","west",1309],[78,"active","west",1326],[79,"active","west",1343]]}
+END DATA
+
+QUESTION logs: Return {"ready_count":integer,"error_line_1based":integer,"total_lines":integer}.
+DATA:
+RUNS-V1 (all lines, exact order/endings; each [count,text] repeats text count times):
+[[90,"INFO ready\n"],[1,"ERROR timeout\n"],[30,"INFO ready\n"]]
+END DATA
+
+QUESTION negation: 停止中の管理者は予約できるか。Return {"allowed":boolean}.
+DATA:
+通常会員は予約できる。ただし停止中の会員は予約できない。管理者も停止中は例外扱いしない。
+END DATA
+
+QUESTION paths: Return ALL paths in original order.
+DATA:
+["/src/module_0.py","/src/module_1.py","/src/module_2.py","/src/module_3.py","/src/module_4.py","/src/module_5.py","/src/module_6.py","/src/module_7.py","/src/module_8.py","/src/module_9.py","/src/module_10.py","/src/module_11.py","/src/module_12.py","/src/module_13.py","/src/module_14.py","/src/module_15.py"]
+END DATA
+
+QUESTION sum: Return the exact decimal sum as a JSON STRING (not a number).
+DATA:
+{"source":"sha256:bde6c82bc709ae5bc369c90aa1ce74711c9a8807738d28b8fbd05880df0f24a4","coverage":"all_for_operation","operation":"sum","path":"","field":null,"source_items":4,"result":9007199254740993.6}
+END DATA
+
+QUESTION code: Return allowed(True, True) as a JSON boolean.
+DATA:
+def allowed(active, banned):
+    return active and not banned
+
+END DATA

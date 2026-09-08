@@ -1,0 +1,2 @@
+RUNS-V1 (all lines, exact order/endings; each [count,text] repeats text count times):
+[[100,"注文を受け付け、在庫を確認し、支払い成功後に発送します。\n"]]

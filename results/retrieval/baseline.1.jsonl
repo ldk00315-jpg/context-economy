@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a07ff3-1980-7301-8990-54d95e67a35b"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"action\":\"final\",\"answers\":{\"permission\":{\"allowed\":false,\"approval_status\":\"保留\"},\"reference\":{\"owner\":\"三浦\",\"days\":37},\"all_events\":{\"count\":3,\"event_ids\":[9,97,118]},\"control\":\"山本\"}}"}}
+{"type":"turn.completed","usage":{"input_tokens":14508,"cached_input_tokens":7424,"cache_write_input_tokens":0,"output_tokens":57,"reasoning_output_tokens":0}}

@@ -1,0 +1,1 @@
+{"question": "Return the complete value at JSON Pointer /packages/0/runtimeArguments.", "context": "{\"source\":\"sha256:59e596a8750033fe321fa4badd7a18fbddf46f1fa7f0b24d2fccbd995d7f827f\",\"coverage\":\"all_at_path\",\"operation\":\"lookup\",\"path\":\"/packages/0/runtimeArguments\",\"value\":[{\"type\":\"named\",\"name\":\"--from\",\"value\":\"headroom-ai[mcp]\"}]}"}

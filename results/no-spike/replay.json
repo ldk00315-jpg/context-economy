@@ -1,0 +1,44 @@
+{
+  "type": "offline_replay_not_new_model_quality_measurement",
+  "model_calls": 0,
+  "cases": [
+    {
+      "case": "permission",
+      "route": "raw",
+      "reason": "partial_exploration_blocked_unbounded_recovery",
+      "original_tokens": 1758,
+      "selected_tokens": 1758,
+      "coverage": "all",
+      "exact_restore": true
+    },
+    {
+      "case": "reference",
+      "route": "raw",
+      "reason": "partial_exploration_blocked_unbounded_recovery",
+      "original_tokens": 1574,
+      "selected_tokens": 1574,
+      "coverage": "all",
+      "exact_restore": true
+    },
+    {
+      "case": "all_events",
+      "route": "raw",
+      "reason": "partial_exploration_blocked_unbounded_recovery",
+      "original_tokens": 723,
+      "selected_tokens": 723,
+      "coverage": "all",
+      "exact_restore": true
+    },
+    {
+      "case": "control",
+      "route": "raw",
+      "reason": "partial_exploration_blocked_unbounded_recovery",
+      "original_tokens": 11,
+      "selected_tokens": 11,
+      "coverage": "all",
+      "exact_restore": true
+    }
+  ],
+  "original_payload_total": 4066,
+  "selected_payload_total": 4066
+}

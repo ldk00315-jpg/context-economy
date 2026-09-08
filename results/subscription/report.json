@@ -1,0 +1,123 @@
+{
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort_requested": "medium",
+  "quality_claim": "synthetic_batched_smoke_only",
+  "arms": {
+    "baseline": {
+      "usage": [
+        {
+          "input_tokens": 13303,
+          "cached_input_tokens": 7424,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 232,
+          "reasoning_output_tokens": 49
+        }
+      ],
+      "tool_activity": [],
+      "valid": true,
+      "grades": {
+        "table": true,
+        "logs": true,
+        "negation": true,
+        "paths": true,
+        "sum": true,
+        "code": true
+      },
+      "answer": {
+        "table": {
+          "id": 43,
+          "status": "paused",
+          "region": "east",
+          "value": -731
+        },
+        "logs": {
+          "ready_count": 120,
+          "error_line_1based": 91,
+          "total_lines": 121
+        },
+        "negation": {
+          "allowed": false
+        },
+        "paths": [
+          "/src/module_0.py",
+          "/src/module_1.py",
+          "/src/module_2.py",
+          "/src/module_3.py",
+          "/src/module_4.py",
+          "/src/module_5.py",
+          "/src/module_6.py",
+          "/src/module_7.py",
+          "/src/module_8.py",
+          "/src/module_9.py",
+          "/src/module_10.py",
+          "/src/module_11.py",
+          "/src/module_12.py",
+          "/src/module_13.py",
+          "/src/module_14.py",
+          "/src/module_15.py"
+        ],
+        "sum": "9007199254740993.6",
+        "code": false
+      },
+      "exact_batch_correct": true
+    },
+    "optimized": {
+      "usage": [
+        {
+          "input_tokens": 11134,
+          "cached_input_tokens": 7424,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 181,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "tool_activity": [],
+      "valid": true,
+      "grades": {
+        "table": true,
+        "logs": true,
+        "negation": true,
+        "paths": true,
+        "sum": true,
+        "code": true
+      },
+      "answer": {
+        "table": {
+          "id": 43,
+          "status": "paused",
+          "region": "east",
+          "value": -731
+        },
+        "logs": {
+          "ready_count": 120,
+          "error_line_1based": 91,
+          "total_lines": 121
+        },
+        "negation": {
+          "allowed": false
+        },
+        "paths": [
+          "/src/module_0.py",
+          "/src/module_1.py",
+          "/src/module_2.py",
+          "/src/module_3.py",
+          "/src/module_4.py",
+          "/src/module_5.py",
+          "/src/module_6.py",
+          "/src/module_7.py",
+          "/src/module_8.py",
+          "/src/module_9.py",
+          "/src/module_10.py",
+          "/src/module_11.py",
+          "/src/module_12.py",
+          "/src/module_13.py",
+          "/src/module_14.py",
+          "/src/module_15.py"
+        ],
+        "sum": "9007199254740993.6",
+        "code": false
+      },
+      "exact_batch_correct": true
+    }
+  }
+}

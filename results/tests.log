@@ -1,0 +1,14 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0
+rootdir: I:\Workspace\context-economy
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1, asyncio-1.4.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 32 items
+
+tests\test_contracts.py ........................                         [ 75%]
+tests\test_evaluation.py ........                                        [100%]
+
+----- generated xml file: I:\Workspace\context-economy\results\tests.xml ------
+============================= 32 passed in 13.47s =============================

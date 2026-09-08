@@ -1,0 +1,238 @@
+Answer independent data questions using ONLY the supplied data. Do not call tools or read files. JSON operation results are computed over their declared complete scope; encodings include explanations. Return exactly one JSON object keyed by question id; no prose or markdown.
+
+QUESTION public_config: Return the complete value at JSON Pointer /packages/0/runtimeArguments.
+DATA:
+{"source":"sha256:59e596a8750033fe321fa4badd7a18fbddf46f1fa7f0b24d2fccbd995d7f827f","coverage":"all_at_path","operation":"lookup","path":"/packages/0/runtimeArguments","value":[{"type":"named","name":"--from","value":"headroom-ai[mcp]"}]}
+END DATA
+
+QUESTION public_code: Return ALL module-level function names in source order as a JSON array. Exclude class methods.
+DATA:
+import os
+import subprocess as _sp
+import sys
+from typing import Any
+
+
+def _win32_pid_alive(pid: int) -> bool:
+    """Non-destructive PID liveness probe for Windows via ``kernel32``."""
+    import ctypes
+
+    kernel32 = ctypes.windll.kernel32  # type: ignore[attr-defined]
+    PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
+    handle = kernel32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, pid)
+    if handle:
+        kernel32.CloseHandle(handle)
+        return True
+    ERROR_ACCESS_DENIED = 5
+    # ctypes GetLastError() is Any; wrap so mypy sees bool (matches pid_alive below).
+    return bool(kernel32.GetLastError() == ERROR_ACCESS_DENIED)
+
+
+def pid_alive(pid: int) -> bool:
+    """Return True if *pid* names a live process (non-destructive on all platforms)."""
+    if pid <= 0:
+        return False
+    try:
+        import psutil  # type: ignore[import-untyped]  # optional dep
+
+        return bool(psutil.pid_exists(pid))
+    except Exception:
+        pass
+    if sys.platform == "win32":
+        try:
+            return _win32_pid_alive(pid)
+        except Exception:
+            return True
+    try:
+        os.kill(pid, 0)
+    except PermissionError:
+        return True
+    except (ProcessLookupError, OSError, SystemError):
+        return False
+    return True
+
+
+def run(*args: Any, **kwargs: Any) -> _sp.CompletedProcess:
+    if kwargs.get("text") or kwargs.get("universal_newlines"):
+        kwargs.setdefault("encoding", "utf-8")
+        kwargs.setdefault("errors", "replace")
+    return _sp.run(*args, **kwargs)
+
+
+def Popen(*args: Any, **kwargs: Any) -> _sp.Popen:
+    if kwargs.get("text") or kwargs.get("universal_newlines"):
+        kwargs.setdefault("encoding", "utf-8")
+        kwargs.setdefault("errors", "replace")
+    return _sp.Popen(*args, **kwargs)
+
+END DATA
+
+QUESTION inventory: Return an array containing every complete inventory record whose sku equals SKU-103, in source order.
+DATA:
+{"source":"sha256:07de4bd096ad758d0ae368449e163949dda4f623f917b0dec607bd857f33ff50","coverage":"all_matches","operation":"select_equal","path":"","field":"/sku","equals":"SKU-103","source_items":180,"matches":1,"results":[{"index":103,"value":{"sku":"SKU-103","available":0,"reserved":1,"warehouse":"east"}}]}
+END DATA
+
+QUESTION ledger: Return the exact sum of all ledger amounts as a JSON number.
+DATA:
+{"source":"sha256:7602191b25c50a9b78556dd5e8fa937823c5143d118b12c3c3b2216d6ef0a8b8","coverage":"all_for_operation","operation":"sum","path":"","field":null,"source_items":180,"result":108630}
+END DATA
+
+QUESTION all_warnings: Return ALL WARN event numbers in source order as a JSON array.
+DATA:
+event 000: OK heartbeat
+event 001: OK heartbeat
+event 002: OK heartbeat
+event 003: OK heartbeat
+event 004: OK heartbeat
+event 005: OK heartbeat
+event 006: OK heartbeat
+event 007: OK heartbeat
+event 008: OK heartbeat
+event 009: OK heartbeat
+event 010: OK heartbeat
+event 011: WARN timeout
+event 012: OK heartbeat
+event 013: OK heartbeat
+event 014: OK heartbeat
+event 015: OK heartbeat
+event 016: OK heartbeat
+event 017: OK heartbeat
+event 018: OK heartbeat
+event 019: OK heartbeat
+event 020: OK heartbeat
+event 021: OK heartbeat
+event 022: OK heartbeat
+event 023: OK heartbeat
+event 024: OK heartbeat
+event 025: OK heartbeat
+event 026: OK heartbeat
+event 027: OK heartbeat
+event 028: OK heartbeat
+event 029: OK heartbeat
+event 030: OK heartbeat
+event 031: OK heartbeat
+event 032: OK heartbeat
+event 033: OK heartbeat
+event 034: OK heartbeat
+event 035: OK heartbeat
+event 036: OK heartbeat
+event 037: OK heartbeat
+event 038: OK heartbeat
+event 039: OK heartbeat
+event 040: OK heartbeat
+event 041: OK heartbeat
+event 042: OK heartbeat
+event 043: OK heartbeat
+event 044: OK heartbeat
+event 045: OK heartbeat
+event 046: OK heartbeat
+event 047: OK heartbeat
+event 048: OK heartbeat
+event 049: OK heartbeat
+event 050: OK heartbeat
+event 051: OK heartbeat
+event 052: OK heartbeat
+event 053: OK heartbeat
+event 054: OK heartbeat
+event 055: OK heartbeat
+event 056: OK heartbeat
+event 057: OK heartbeat
+event 058: OK heartbeat
+event 059: OK heartbeat
+event 060: OK heartbeat
+event 061: OK heartbeat
+event 062: OK heartbeat
+event 063: OK heartbeat
+event 064: OK heartbeat
+event 065: OK heartbeat
+event 066: OK heartbeat
+event 067: OK heartbeat
+event 068: OK heartbeat
+event 069: OK heartbeat
+event 070: OK heartbeat
+event 071: WARN timeout
+event 072: OK heartbeat
+event 073: OK heartbeat
+event 074: OK heartbeat
+event 075: OK heartbeat
+event 076: OK heartbeat
+event 077: OK heartbeat
+event 078: OK heartbeat
+event 079: OK heartbeat
+event 080: OK heartbeat
+event 081: OK heartbeat
+event 082: OK heartbeat
+event 083: OK heartbeat
+event 084: OK heartbeat
+event 085: OK heartbeat
+event 086: OK heartbeat
+event 087: OK heartbeat
+event 088: OK heartbeat
+event 089: OK heartbeat
+event 090: OK heartbeat
+event 091: OK heartbeat
+event 092: OK heartbeat
+event 093: OK heartbeat
+event 094: OK heartbeat
+event 095: OK heartbeat
+event 096: OK heartbeat
+event 097: OK heartbeat
+event 098: OK heartbeat
+event 099: OK heartbeat
+event 100: OK heartbeat
+event 101: OK heartbeat
+event 102: OK heartbeat
+event 103: OK heartbeat
+event 104: OK heartbeat
+event 105: OK heartbeat
+event 106: OK heartbeat
+event 107: OK heartbeat
+event 108: OK heartbeat
+event 109: OK heartbeat
+event 110: OK heartbeat
+event 111: OK heartbeat
+event 112: OK heartbeat
+event 113: OK heartbeat
+event 114: OK heartbeat
+event 115: OK heartbeat
+event 116: OK heartbeat
+event 117: OK heartbeat
+event 118: OK heartbeat
+event 119: OK heartbeat
+event 120: OK heartbeat
+event 121: OK heartbeat
+event 122: OK heartbeat
+event 123: OK heartbeat
+event 124: OK heartbeat
+event 125: OK heartbeat
+event 126: OK heartbeat
+event 127: OK heartbeat
+event 128: OK heartbeat
+event 129: OK heartbeat
+event 130: OK heartbeat
+event 131: OK heartbeat
+event 132: OK heartbeat
+event 133: OK heartbeat
+event 134: OK heartbeat
+event 135: OK heartbeat
+event 136: OK heartbeat
+event 137: OK heartbeat
+event 138: OK heartbeat
+event 139: WARN timeout
+event 140: OK heartbeat
+event 141: OK heartbeat
+event 142: OK heartbeat
+event 143: OK heartbeat
+event 144: OK heartbeat
+event 145: OK heartbeat
+event 146: OK heartbeat
+event 147: OK heartbeat
+event 148: OK heartbeat
+event 149: OK heartbeat
+
+END DATA
+
+QUESTION short_sum: Return the exact decimal sum as a JSON string.
+DATA:
+[0.1,0.2]
+END DATA

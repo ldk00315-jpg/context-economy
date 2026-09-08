@@ -1,0 +1,652 @@
+Answer these six independent data questions. Use ONLY the supplied data. Do not call any tools or read files. Encodings include their decoding instructions. Return ONE JSON object keyed by question id, with no prose or markdown.
+
+QUESTION table: Return the complete object with id 43.
+DATA:
+[
+  {
+    "id": 0,
+    "status": "active",
+    "region": "west",
+    "value": 0
+  },
+  {
+    "id": 1,
+    "status": "active",
+    "region": "west",
+    "value": 17
+  },
+  {
+    "id": 2,
+    "status": "active",
+    "region": "west",
+    "value": 34
+  },
+  {
+    "id": 3,
+    "status": "active",
+    "region": "west",
+    "value": 51
+  },
+  {
+    "id": 4,
+    "status": "active",
+    "region": "west",
+    "value": 68
+  },
+  {
+    "id": 5,
+    "status": "active",
+    "region": "west",
+    "value": 85
+  },
+  {
+    "id": 6,
+    "status": "active",
+    "region": "west",
+    "value": 102
+  },
+  {
+    "id": 7,
+    "status": "active",
+    "region": "west",
+    "value": 119
+  },
+  {
+    "id": 8,
+    "status": "active",
+    "region": "west",
+    "value": 136
+  },
+  {
+    "id": 9,
+    "status": "active",
+    "region": "west",
+    "value": 153
+  },
+  {
+    "id": 10,
+    "status": "active",
+    "region": "west",
+    "value": 170
+  },
+  {
+    "id": 11,
+    "status": "active",
+    "region": "west",
+    "value": 187
+  },
+  {
+    "id": 12,
+    "status": "active",
+    "region": "west",
+    "value": 204
+  },
+  {
+    "id": 13,
+    "status": "active",
+    "region": "west",
+    "value": 221
+  },
+  {
+    "id": 14,
+    "status": "active",
+    "region": "west",
+    "value": 238
+  },
+  {
+    "id": 15,
+    "status": "active",
+    "region": "west",
+    "value": 255
+  },
+  {
+    "id": 16,
+    "status": "active",
+    "region": "west",
+    "value": 272
+  },
+  {
+    "id": 17,
+    "status": "active",
+    "region": "west",
+    "value": 289
+  },
+  {
+    "id": 18,
+    "status": "active",
+    "region": "west",
+    "value": 306
+  },
+  {
+    "id": 19,
+    "status": "active",
+    "region": "west",
+    "value": 323
+  },
+  {
+    "id": 20,
+    "status": "active",
+    "region": "west",
+    "value": 340
+  },
+  {
+    "id": 21,
+    "status": "active",
+    "region": "west",
+    "value": 357
+  },
+  {
+    "id": 22,
+    "status": "active",
+    "region": "west",
+    "value": 374
+  },
+  {
+    "id": 23,
+    "status": "active",
+    "region": "west",
+    "value": 391
+  },
+  {
+    "id": 24,
+    "status": "active",
+    "region": "west",
+    "value": 408
+  },
+  {
+    "id": 25,
+    "status": "active",
+    "region": "west",
+    "value": 425
+  },
+  {
+    "id": 26,
+    "status": "active",
+    "region": "west",
+    "value": 442
+  },
+  {
+    "id": 27,
+    "status": "active",
+    "region": "west",
+    "value": 459
+  },
+  {
+    "id": 28,
+    "status": "active",
+    "region": "west",
+    "value": 476
+  },
+  {
+    "id": 29,
+    "status": "active",
+    "region": "west",
+    "value": 493
+  },
+  {
+    "id": 30,
+    "status": "active",
+    "region": "west",
+    "value": 510
+  },
+  {
+    "id": 31,
+    "status": "active",
+    "region": "west",
+    "value": 527
+  },
+  {
+    "id": 32,
+    "status": "active",
+    "region": "west",
+    "value": 544
+  },
+  {
+    "id": 33,
+    "status": "active",
+    "region": "west",
+    "value": 561
+  },
+  {
+    "id": 34,
+    "status": "active",
+    "region": "west",
+    "value": 578
+  },
+  {
+    "id": 35,
+    "status": "active",
+    "region": "west",
+    "value": 595
+  },
+  {
+    "id": 36,
+    "status": "active",
+    "region": "west",
+    "value": 612
+  },
+  {
+    "id": 37,
+    "status": "active",
+    "region": "west",
+    "value": 629
+  },
+  {
+    "id": 38,
+    "status": "active",
+    "region": "west",
+    "value": 646
+  },
+  {
+    "id": 39,
+    "status": "active",
+    "region": "west",
+    "value": 663
+  },
+  {
+    "id": 40,
+    "status": "active",
+    "region": "west",
+    "value": 680
+  },
+  {
+    "id": 41,
+    "status": "active",
+    "region": "west",
+    "value": 697
+  },
+  {
+    "id": 42,
+    "status": "active",
+    "region": "west",
+    "value": 714
+  },
+  {
+    "id": 43,
+    "status": "paused",
+    "region": "east",
+    "value": -731
+  },
+  {
+    "id": 44,
+    "status": "active",
+    "region": "west",
+    "value": 748
+  },
+  {
+    "id": 45,
+    "status": "active",
+    "region": "west",
+    "value": 765
+  },
+  {
+    "id": 46,
+    "status": "active",
+    "region": "west",
+    "value": 782
+  },
+  {
+    "id": 47,
+    "status": "active",
+    "region": "west",
+    "value": 799
+  },
+  {
+    "id": 48,
+    "status": "active",
+    "region": "west",
+    "value": 816
+  },
+  {
+    "id": 49,
+    "status": "active",
+    "region": "west",
+    "value": 833
+  },
+  {
+    "id": 50,
+    "status": "active",
+    "region": "west",
+    "value": 850
+  },
+  {
+    "id": 51,
+    "status": "active",
+    "region": "west",
+    "value": 867
+  },
+  {
+    "id": 52,
+    "status": "active",
+    "region": "west",
+    "value": 884
+  },
+  {
+    "id": 53,
+    "status": "active",
+    "region": "west",
+    "value": 901
+  },
+  {
+    "id": 54,
+    "status": "active",
+    "region": "west",
+    "value": 918
+  },
+  {
+    "id": 55,
+    "status": "active",
+    "region": "west",
+    "value": 935
+  },
+  {
+    "id": 56,
+    "status": "active",
+    "region": "west",
+    "value": 952
+  },
+  {
+    "id": 57,
+    "status": "active",
+    "region": "west",
+    "value": 969
+  },
+  {
+    "id": 58,
+    "status": "active",
+    "region": "west",
+    "value": 986
+  },
+  {
+    "id": 59,
+    "status": "active",
+    "region": "west",
+    "value": 1003
+  },
+  {
+    "id": 60,
+    "status": "active",
+    "region": "west",
+    "value": 1020
+  },
+  {
+    "id": 61,
+    "status": "active",
+    "region": "west",
+    "value": 1037
+  },
+  {
+    "id": 62,
+    "status": "active",
+    "region": "west",
+    "value": 1054
+  },
+  {
+    "id": 63,
+    "status": "active",
+    "region": "west",
+    "value": 1071
+  },
+  {
+    "id": 64,
+    "status": "active",
+    "region": "west",
+    "value": 1088
+  },
+  {
+    "id": 65,
+    "status": "active",
+    "region": "west",
+    "value": 1105
+  },
+  {
+    "id": 66,
+    "status": "active",
+    "region": "west",
+    "value": 1122
+  },
+  {
+    "id": 67,
+    "status": "active",
+    "region": "west",
+    "value": 1139
+  },
+  {
+    "id": 68,
+    "status": "active",
+    "region": "west",
+    "value": 1156
+  },
+  {
+    "id": 69,
+    "status": "active",
+    "region": "west",
+    "value": 1173
+  },
+  {
+    "id": 70,
+    "status": "active",
+    "region": "west",
+    "value": 1190
+  },
+  {
+    "id": 71,
+    "status": "active",
+    "region": "west",
+    "value": 1207
+  },
+  {
+    "id": 72,
+    "status": "active",
+    "region": "west",
+    "value": 1224
+  },
+  {
+    "id": 73,
+    "status": "active",
+    "region": "west",
+    "value": 1241
+  },
+  {
+    "id": 74,
+    "status": "active",
+    "region": "west",
+    "value": 1258
+  },
+  {
+    "id": 75,
+    "status": "active",
+    "region": "west",
+    "value": 1275
+  },
+  {
+    "id": 76,
+    "status": "active",
+    "region": "west",
+    "value": 1292
+  },
+  {
+    "id": 77,
+    "status": "active",
+    "region": "west",
+    "value": 1309
+  },
+  {
+    "id": 78,
+    "status": "active",
+    "region": "west",
+    "value": 1326
+  },
+  {
+    "id": 79,
+    "status": "active",
+    "region": "west",
+    "value": 1343
+  }
+]
+END DATA
+
+QUESTION logs: Return {"ready_count":integer,"error_line_1based":integer,"total_lines":integer}.
+DATA:
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+ERROR timeout
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+INFO ready
+
+END DATA
+
+QUESTION negation: 停止中の管理者は予約できるか。Return {"allowed":boolean}.
+DATA:
+通常会員は予約できる。ただし停止中の会員は予約できない。管理者も停止中は例外扱いしない。
+END DATA
+
+QUESTION paths: Return ALL paths in original order.
+DATA:
+[
+  "/src/module_0.py",
+  "/src/module_1.py",
+  "/src/module_2.py",
+  "/src/module_3.py",
+  "/src/module_4.py",
+  "/src/module_5.py",
+  "/src/module_6.py",
+  "/src/module_7.py",
+  "/src/module_8.py",
+  "/src/module_9.py",
+  "/src/module_10.py",
+  "/src/module_11.py",
+  "/src/module_12.py",
+  "/src/module_13.py",
+  "/src/module_14.py",
+  "/src/module_15.py"
+]
+END DATA
+
+QUESTION sum: Return the exact decimal sum as a JSON STRING (not a number).
+DATA:
+[0.1,0.2,0.3,9007199254740993]
+END DATA
+
+QUESTION code: Return allowed(True, True) as a JSON boolean.
+DATA:
+def allowed(active, banned):
+    return active and not banned
+
+END DATA

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a07ff2-1610-7262-b46d-a0d89f03521d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"action\":\"request\",\"requests\":[{\"op\":\"retrieve\",\"source\":\"sha256:b48c8d552c4c20b9c8ae64f21e6dd81b1f53ee011564464130c0c832f2d283af\"},{\"op\":\"retrieve\",\"source\":\"sha256:c4809a6bd917ae99da0c5137d08d9fba87113ca905e913fb799b2b248c05e216\"},{\"op\":\"retrieve\",\"source\":\"sha256:dc7e700bcf9760ea51511ce62e60237b40c0f8616527b9c2bc4097a5c5c1e945\"}]}"}}
+{"type":"turn.completed","usage":{"input_tokens":10960,"cached_input_tokens":2304,"cache_write_input_tokens":0,"output_tokens":156,"reasoning_output_tokens":0}}

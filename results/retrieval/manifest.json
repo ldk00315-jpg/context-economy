@@ -1,0 +1,70 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "medium",
+  "quota_start": 11,
+  "max_calls": 4,
+  "max_calls_per_arm": {
+    "baseline": 1,
+    "optimized": 3
+  },
+  "expected": {
+    "permission": {
+      "allowed": false,
+      "approval_status": "保留"
+    },
+    "reference": {
+      "owner": "三浦",
+      "days": 37
+    },
+    "all_events": {
+      "count": 3,
+      "event_ids": [
+        9,
+        97,
+        118
+      ]
+    },
+    "control": "山本"
+  },
+  "sources": [
+    "sha256:b48c8d552c4c20b9c8ae64f21e6dd81b1f53ee011564464130c0c832f2d283af",
+    "sha256:c4809a6bd917ae99da0c5137d08d9fba87113ca905e913fb799b2b248c05e216",
+    "sha256:dc7e700bcf9760ea51511ce62e60237b40c0f8616527b9c2bc4097a5c5c1e945",
+    "sha256:f739c2aa5582b58e2c15dddc83dd26394063f68834ffc08c9ff7428a24a9f9f3"
+  ],
+  "cases": [
+    {
+      "id": "permission",
+      "source": "sha256:b48c8d552c4c20b9c8ae64f21e6dd81b1f53ee011564464130c0c832f2d283af",
+      "original_tokens": 1758,
+      "focus_tokens": 138,
+      "coverage": "partial"
+    },
+    {
+      "id": "reference",
+      "source": "sha256:c4809a6bd917ae99da0c5137d08d9fba87113ca905e913fb799b2b248c05e216",
+      "original_tokens": 1574,
+      "focus_tokens": 139,
+      "coverage": "partial"
+    },
+    {
+      "id": "all_events",
+      "source": "sha256:dc7e700bcf9760ea51511ce62e60237b40c0f8616527b9c2bc4097a5c5c1e945",
+      "original_tokens": 723,
+      "focus_tokens": 120,
+      "coverage": "partial"
+    },
+    {
+      "id": "control",
+      "source": "sha256:f739c2aa5582b58e2c15dddc83dd26394063f68834ffc08c9ff7428a24a9f9f3",
+      "original_tokens": 11,
+      "focus_tokens": 123,
+      "coverage": "all"
+    }
+  ],
+  "protocol": "application_json_actions",
+  "local_prompt_tokens": {
+    "baseline": 4521,
+    "optimized": 975
+  }
+}

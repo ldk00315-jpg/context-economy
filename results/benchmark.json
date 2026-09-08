@@ -1,0 +1,118 @@
+{
+  "seed": 20260908,
+  "tokenizer": "tiktoken:o200k_base",
+  "scope": "model-visible payload and explicitly scripted replay only",
+  "llm_calls": 0,
+  "llm_quality": "not_evaluated",
+  "lossless_cases": [
+    {
+      "case": "dictionary_json",
+      "before": 14403,
+      "after": 4543,
+      "saved_pct": 68.46,
+      "format": "table-v1",
+      "all_data_restored": true,
+      "byte_exact_original_retrieved": true,
+      "simple_minified_json_tokens": 8703
+    },
+    {
+      "case": "paths_all_300",
+      "before": 2701,
+      "after": 2701,
+      "saved_pct": 0.0,
+      "format": "raw",
+      "all_data_restored": true,
+      "byte_exact_original_retrieved": true,
+      "simple_minified_json_tokens": 2701
+    },
+    {
+      "case": "numbers_all_500",
+      "before": 2500,
+      "after": 2001,
+      "saved_pct": 19.96,
+      "format": "json",
+      "all_data_restored": true,
+      "byte_exact_original_retrieved": true,
+      "simple_minified_json_tokens": 2001
+    },
+    {
+      "case": "repeated_logs",
+      "before": 1613,
+      "after": 60,
+      "saved_pct": 96.28,
+      "format": "runs-v1",
+      "all_data_restored": true,
+      "byte_exact_original_retrieved": true,
+      "simple_minified_json_tokens": null
+    },
+    {
+      "case": "distinct_logs",
+      "before": 6000,
+      "after": 6000,
+      "saved_pct": 0.0,
+      "format": "raw",
+      "all_data_restored": true,
+      "byte_exact_original_retrieved": true,
+      "simple_minified_json_tokens": null
+    },
+    {
+      "case": "japanese_repeat",
+      "before": 2100,
+      "after": 49,
+      "saved_pct": 97.67,
+      "format": "runs-v1",
+      "all_data_restored": true,
+      "byte_exact_original_retrieved": true,
+      "simple_minified_json_tokens": null
+    },
+    {
+      "case": "source_code",
+      "before": 839,
+      "after": 839,
+      "saved_pct": 0.0,
+      "format": "raw",
+      "all_data_restored": true,
+      "byte_exact_original_retrieved": true,
+      "simple_minified_json_tokens": null
+    },
+    {
+      "case": "short_message",
+      "before": 6,
+      "after": 6,
+      "saved_pct": 0.0,
+      "format": "raw",
+      "all_data_restored": true,
+      "byte_exact_original_retrieved": true,
+      "simple_minified_json_tokens": null
+    }
+  ],
+  "exact_operations": [
+    {
+      "case": "exact_sum_all_500",
+      "source_tokens": 1500,
+      "result_tokens": 75,
+      "saved_pct": 95.0,
+      "answer_exact": true,
+      "evaluated_items": 500
+    },
+    {
+      "case": "exact_find_middle_row",
+      "source_tokens": 11702,
+      "result_tokens": 115,
+      "saved_pct": 99.02,
+      "answer_exact": true,
+      "evaluated_items": 300
+    }
+  ],
+  "replay": {
+    "kind": "scripted_visible_text_not_model_usage",
+    "baseline_one_request_tokens": 6042,
+    "focus_sufficient_one_request_tokens": 224,
+    "focus_then_full_retrieve_total_tokens": 6570,
+    "retrieval_calls": 1,
+    "final_answer_tokens": "unmeasured; no LLM called",
+    "note": "Retrieval request text is counted as generated output and again in the next input.",
+    "focus_saved_pct": 96.29,
+    "retrieve_saved_pct": -8.74
+  }
+}

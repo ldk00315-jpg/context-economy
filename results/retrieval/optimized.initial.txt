@@ -1,0 +1,21 @@
+Solve the independent questions using only supplied source evidence. A source may be complete or partial; judge whether evidence suffices. Do not guess missing facts. Do not use native tools or read files. Respond with exactly one JSON object: {"action":"final","answers":{question_id:answer,...}} OR {"action":"request","requests":[{"op":"retrieve","source":"sha256 id"},...]}. You may instead request {"op":"read","source":"sha256 id","start":0,"limit":100}. read uses zero-based line offsets, returns a page with coverage and next_start; retrieve returns exact complete source text. Batch needed requests (maximum 4). The application executes requests and returns results in the transcript. Only listed source IDs are available. Max 2 request rounds; answer without requests when sufficient.
+
+QUESTION permission: 水曜日にKestrelを公開できるか。{"allowed":boolean,"approval_status":string}で答える。
+SOURCE sha256:b48c8d552c4c20b9c8ae64f21e6dd81b1f53ee011564464130c0c832f2d283af:
+{"source":"sha256:b48c8d552c4c20b9c8ae64f21e6dd81b1f53ee011564464130c0c832f2d283af","coverage":"partial","operation":"focus","terms":["Kestrel"],"total_lines":103,"matching_lines":1,"shown_matching_lines":1,"omitted_lines":102,"next_action":"read(source,start,limit) for omitted evidence; retrieve(source) for exact full text","lines":[{"index":0,"text":"対象: Kestrel。通常の公開日は水曜日。例外規定も確認すること。\n"}]}
+END SOURCE
+
+QUESTION reference: Brackenの担当者と保管日数を{"owner":string,"days":integer}で答える。
+SOURCE sha256:c4809a6bd917ae99da0c5137d08d9fba87113ca905e913fb799b2b248c05e216:
+{"source":"sha256:c4809a6bd917ae99da0c5137d08d9fba87113ca905e913fb799b2b248c05e216","coverage":"partial","operation":"focus","terms":["Bracken"],"total_lines":103,"matching_lines":1,"shown_matching_lines":1,"omitted_lines":102,"next_action":"read(source,start,limit) for omitted evidence; retrieve(source) for exact full text","lines":[{"index":0,"text":"案件 Bracken の適用規則は R-58。担当者と保管日数は規則表を参照。\n"}]}
+END SOURCE
+
+QUESTION all_events: 全ログ中のWARN件数と全WARNのevent番号を{"count":integer,"event_ids":integer[]}で時系列順に答える。
+SOURCE sha256:dc7e700bcf9760ea51511ce62e60237b40c0f8616527b9c2bc4097a5c5c1e945:
+{"source":"sha256:dc7e700bcf9760ea51511ce62e60237b40c0f8616527b9c2bc4097a5c5c1e945","coverage":"partial","operation":"focus","terms":["WARN"],"total_lines":120,"matching_lines":3,"shown_matching_lines":1,"omitted_lines":119,"next_action":"read(source,start,limit) for omitted evidence; retrieve(source) for exact full text","lines":[{"index":9,"text":"event 009: WARN transient\n"}]}
+END SOURCE
+
+QUESTION control: Deltaの担当者名をJSON文字列で答える。
+SOURCE sha256:f739c2aa5582b58e2c15dddc83dd26394063f68834ffc08c9ff7428a24a9f9f3:
+{"source":"sha256:f739c2aa5582b58e2c15dddc83dd26394063f68834ffc08c9ff7428a24a9f9f3","coverage":"all","operation":"focus","terms":["Delta"],"total_lines":1,"matching_lines":1,"shown_matching_lines":1,"omitted_lines":0,"next_action":"read(source,start,limit) for omitted evidence; retrieve(source) for exact full text","lines":[{"index":0,"text":"案件 Delta の確定担当者: 山本。\n"}]}
+END SOURCE

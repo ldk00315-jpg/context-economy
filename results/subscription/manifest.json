@@ -1,0 +1,95 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "questions": 6,
+  "repetitions": 1,
+  "max_model_calls": 2,
+  "expected": {
+    "table": {
+      "id": 43,
+      "status": "paused",
+      "region": "east",
+      "value": -731
+    },
+    "logs": {
+      "ready_count": 120,
+      "error_line_1based": 91,
+      "total_lines": 121
+    },
+    "negation": {
+      "allowed": false
+    },
+    "paths": [
+      "/src/module_0.py",
+      "/src/module_1.py",
+      "/src/module_2.py",
+      "/src/module_3.py",
+      "/src/module_4.py",
+      "/src/module_5.py",
+      "/src/module_6.py",
+      "/src/module_7.py",
+      "/src/module_8.py",
+      "/src/module_9.py",
+      "/src/module_10.py",
+      "/src/module_11.py",
+      "/src/module_12.py",
+      "/src/module_13.py",
+      "/src/module_14.py",
+      "/src/module_15.py"
+    ],
+    "sum": "9007199254740993.6",
+    "code": false
+  },
+  "quota_baseline_percent": 9,
+  "quota_before_calls_percent": 10,
+  "quota_warning": "Shared account, integer percentages; no exact 2% guarantee.",
+  "quality_claim": "synthetic_batched_smoke_only",
+  "cases": [
+    {
+      "id": "table",
+      "format": "table-v1",
+      "original_tokens": 2583,
+      "optimized_tokens": 697,
+      "coverage": "all"
+    },
+    {
+      "id": "logs",
+      "format": "runs-v1",
+      "original_tokens": 363,
+      "optimized_tokens": 44,
+      "coverage": "all"
+    },
+    {
+      "id": "negation",
+      "format": "raw",
+      "original_tokens": 32,
+      "optimized_tokens": 32,
+      "coverage": "all"
+    },
+    {
+      "id": "paths",
+      "format": "json",
+      "original_tokens": 130,
+      "optimized_tokens": 113,
+      "coverage": "all"
+    },
+    {
+      "id": "sum",
+      "format": "query-v1",
+      "original_tokens": 20,
+      "optimized_tokens": 76,
+      "coverage": "all_for_operation"
+    },
+    {
+      "id": "code",
+      "format": "raw",
+      "original_tokens": 13,
+      "optimized_tokens": 13,
+      "coverage": "all"
+    }
+  ],
+  "prompt_tokens_o200k_base": {
+    "baseline": 3314,
+    "optimized": 1149
+  }
+}

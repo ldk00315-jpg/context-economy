@@ -1,0 +1,159 @@
+def compute_0(x):
+    value = x + 0
+    return value * 2
+
+def compute_1(x):
+    value = x + 1
+    return value * 2
+
+def compute_2(x):
+    value = x + 2
+    return value * 2
+
+def compute_3(x):
+    value = x + 3
+    return value * 2
+
+def compute_4(x):
+    value = x + 4
+    return value * 2
+
+def compute_5(x):
+    value = x + 5
+    return value * 2
+
+def compute_6(x):
+    value = x + 6
+    return value * 2
+
+def compute_7(x):
+    value = x + 7
+    return value * 2
+
+def compute_8(x):
+    value = x + 8
+    return value * 2
+
+def compute_9(x):
+    value = x + 9
+    return value * 2
+
+def compute_10(x):
+    value = x + 10
+    return value * 2
+
+def compute_11(x):
+    value = x + 11
+    return value * 2
+
+def compute_12(x):
+    value = x + 12
+    return value * 2
+
+def compute_13(x):
+    value = x + 13
+    return value * 2
+
+def compute_14(x):
+    value = x + 14
+    return value * 2
+
+def compute_15(x):
+    value = x + 15
+    return value * 2
+
+def compute_16(x):
+    value = x + 16
+    return value * 2
+
+def compute_17(x):
+    value = x + 17
+    return value * 2
+
+def compute_18(x):
+    value = x + 18
+    return value * 2
+
+def compute_19(x):
+    value = x + 19
+    return value * 2
+
+def compute_20(x):
+    value = x + 20
+    return value * 2
+
+def compute_21(x):
+    value = x + 21
+    return value * 2
+
+def compute_22(x):
+    value = x + 22
+    return value * 2
+
+def compute_23(x):
+    value = x + 23
+    return value * 2
+
+def compute_24(x):
+    value = x + 24
+    return value * 2
+
+def compute_25(x):
+    value = x + 25
+    return value * 2
+
+def compute_26(x):
+    value = x + 26
+    return value * 2
+
+def compute_27(x):
+    value = x + 27
+    return value * 2
+
+def compute_28(x):
+    value = x + 28
+    return value * 2
+
+def compute_29(x):
+    value = x + 29
+    return value * 2
+
+def compute_30(x):
+    value = x + 30
+    return value * 2
+
+def compute_31(x):
+    value = x + 31
+    return value * 2
+
+def compute_32(x):
+    value = x + 32
+    return value * 2
+
+def compute_33(x):
+    value = x + 33
+    return value * 2
+
+def compute_34(x):
+    value = x + 34
+    return value * 2
+
+def compute_35(x):
+    value = x + 35
+    return value * 2
+
+def compute_36(x):
+    value = x + 36
+    return value * 2
+
+def compute_37(x):
+    value = x + 37
+    return value * 2
+
+def compute_38(x):
+    value = x + 38
+    return value * 2
+
+def compute_39(x):
+    value = x + 39
+    return value * 2

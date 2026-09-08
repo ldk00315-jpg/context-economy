@@ -1,0 +1,54 @@
+{
+  "model_calls": 0,
+  "measurement": "local o200k_base on complete rendered text; not provider usage or quality",
+  "cases": [
+    {
+      "id": "public_config",
+      "route": "lookup",
+      "coverage": "all_at_path",
+      "input_tokens": 110,
+      "original_input_tokens": 404,
+      "saved_tokens": 294
+    },
+    {
+      "id": "public_code",
+      "route": "raw",
+      "coverage": "all",
+      "input_tokens": 527,
+      "original_input_tokens": 527,
+      "saved_tokens": 0
+    },
+    {
+      "id": "inventory",
+      "route": "select",
+      "coverage": "all_matches",
+      "input_tokens": 128,
+      "original_input_tokens": 7410,
+      "saved_tokens": 7282
+    },
+    {
+      "id": "ledger",
+      "route": "aggregate",
+      "coverage": "all_for_operation",
+      "input_tokens": 96,
+      "original_input_tokens": 957,
+      "saved_tokens": 861
+    },
+    {
+      "id": "all_warnings",
+      "route": "raw",
+      "coverage": "all",
+      "input_tokens": 1221,
+      "original_input_tokens": 1221,
+      "saved_tokens": 0
+    },
+    {
+      "id": "short_sum",
+      "route": "raw",
+      "coverage": "all",
+      "input_tokens": 27,
+      "original_input_tokens": 27,
+      "saved_tokens": 0
+    }
+  ]
+}

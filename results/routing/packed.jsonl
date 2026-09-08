@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a07ffe-2f2c-7a72-b58a-843a1234576c"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"public_config\":[{\"type\":\"named\",\"name\":\"--from\",\"value\":\"headroom-ai[mcp]\"}],\"public_code\":[\"_win32_pid_alive\",\"pid_alive\",\"run\",\"Popen\"],\"inventory\":[{\"sku\":\"SKU-103\",\"available\":0,\"reserved\":1,\"warehouse\":\"east\"}],\"ledger\":108630,\"all_warnings\":[11,71,139],\"short_sum\":\"0.3\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14301,"cached_input_tokens":7424,"cache_write_input_tokens":0,"output_tokens":118,"reasoning_output_tokens":26}}

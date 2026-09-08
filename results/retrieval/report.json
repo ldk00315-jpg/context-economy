@@ -1,0 +1,24 @@
+{
+  "arms": {
+    "baseline": {
+      "calls": 1,
+      "correct": true,
+      "input": 14508,
+      "output": 57,
+      "cached_input": 7424,
+      "total": 14565
+    },
+    "optimized": {
+      "calls": 2,
+      "correct": true,
+      "input": 26663,
+      "output": 213,
+      "cached_input": 2304,
+      "total": 26876
+    }
+  },
+  "total_increase_percent": 84.52454514246482,
+  "input_increase_percent": 83.78136200716845,
+  "validation": "exact answers, three necessary requests, source results match checksum-verified originals, unknown source rejected",
+  "scope": "four synthetic questions batched; three CLI calls; application-mediated JSON actions; full visible transcript replayed"
+}

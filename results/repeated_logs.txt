@@ -1,0 +1,2 @@
+RUNS-V1 (all lines, exact order/endings; each [count,text] repeats text count times):
+[[200,"healthcheck succeeded\n"],[1,"FATAL inventory unavailable\n"],[1,"traceback: checkout.py:47\n"],[200,"healthcheck succeeded\n"]]

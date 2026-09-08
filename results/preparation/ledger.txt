@@ -1,0 +1,1 @@
+{"question": "Return the exact sum of all ledger amounts as a JSON number.", "context": "{\"source\":\"sha256:7602191b25c50a9b78556dd5e8fa937823c5143d118b12c3c3b2216d6ef0a8b8\",\"coverage\":\"all_for_operation\",\"operation\":\"sum\",\"path\":\"\",\"field\":null,\"source_items\":180,\"result\":108630}"}

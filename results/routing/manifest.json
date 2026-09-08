@@ -1,0 +1,133 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "medium",
+  "expected": {
+    "public_config": [
+      {
+        "type": "named",
+        "name": "--from",
+        "value": "headroom-ai[mcp]"
+      }
+    ],
+    "public_code": [
+      "_win32_pid_alive",
+      "pid_alive",
+      "run",
+      "Popen"
+    ],
+    "inventory": [
+      {
+        "sku": "SKU-103",
+        "available": 0,
+        "reserved": 1,
+        "warehouse": "east"
+      }
+    ],
+    "ledger": 108630,
+    "all_warnings": [
+      11,
+      71,
+      139
+    ],
+    "short_sum": "0.3"
+  },
+  "cases": [
+    {
+      "id": "public_config",
+      "provenance": "public:server.json",
+      "source_sha256": "59e596a8750033fe321fa4badd7a18fbddf46f1fa7f0b24d2fccbd995d7f827f",
+      "route": "lookup",
+      "reason": "explicit_query_scope_complete",
+      "operation": "lookup",
+      "arguments": {
+        "path": "/packages/0/runtimeArguments"
+      },
+      "coverage": "all_at_path",
+      "raw_tokens": 320,
+      "packed_tokens": 214,
+      "routed_tokens": 86
+    },
+    {
+      "id": "public_code",
+      "provenance": "public:headroom/_subprocess.py",
+      "source_sha256": "f23ebd196addb0a65c30537beed60c723454a9b9cbfdb96d6d962c15bbdfbc09",
+      "route": "raw",
+      "reason": "complete_evidence_required",
+      "operation": "complete",
+      "arguments": {},
+      "coverage": "all",
+      "raw_tokens": 440,
+      "packed_tokens": 440,
+      "routed_tokens": 440
+    },
+    {
+      "id": "inventory",
+      "provenance": "synthetic:inventory",
+      "source_sha256": "07de4bd096ad758d0ae368449e163949dda4f623f917b0dec607bd857f33ff50",
+      "route": "select",
+      "reason": "explicit_query_scope_complete",
+      "operation": "select",
+      "arguments": {
+        "field": "/sku",
+        "equals_json": "\"SKU-103\""
+      },
+      "coverage": "all_matches",
+      "raw_tokens": 6122,
+      "packed_tokens": 2015,
+      "routed_tokens": 98
+    },
+    {
+      "id": "ledger",
+      "provenance": "synthetic:ledger",
+      "source_sha256": "7602191b25c50a9b78556dd5e8fa937823c5143d118b12c3c3b2216d6ef0a8b8",
+      "route": "aggregate",
+      "reason": "explicit_query_scope_complete",
+      "operation": "aggregate",
+      "arguments": {
+        "op": "sum"
+      },
+      "coverage": "all_for_operation",
+      "raw_tokens": 755,
+      "packed_tokens": 394,
+      "routed_tokens": 74
+    },
+    {
+      "id": "all_warnings",
+      "provenance": "synthetic:logs",
+      "source_sha256": "55b3058c2395ea6b70c660e368ad836f013ac3fdeb66e07224d4b20fd83104d8",
+      "route": "raw",
+      "reason": "complete_evidence_required",
+      "operation": "complete",
+      "arguments": {},
+      "coverage": "all",
+      "raw_tokens": 1050,
+      "packed_tokens": 1050,
+      "routed_tokens": 1050
+    },
+    {
+      "id": "short_sum",
+      "provenance": "synthetic:short",
+      "source_sha256": "b1957c9ccff6e9ac5a5d2e1bcc260ec633e3a4030e2db8279676c1ef602110ae",
+      "route": "raw",
+      "reason": "exact_result_overhead_erases_saving",
+      "operation": "aggregate",
+      "arguments": {
+        "op": "sum"
+      },
+      "coverage": "all",
+      "raw_tokens": 9,
+      "packed_tokens": 9,
+      "routed_tokens": 9
+    }
+  ],
+  "quality_claim": "six_question_mixed_smoke_no_noninferiority",
+  "public_commit": "e67b3c8a29443a60d6b0018fb22f525c5cd7e709",
+  "operation_selection": "caller_supplied_explicit_contract_not_model_inferred",
+  "max_calls": 3,
+  "quota_start": 11,
+  "prompt_tokens": {
+    "baseline": 8886,
+    "packed": 4312,
+    "optimized": 1947
+  }
+}
